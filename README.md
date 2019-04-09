@@ -15,5 +15,7 @@ Use the image processing method to extract the ridges in the fingerprint image a
 - Remove the pore by finding and removing outlier with threshold of size 5*5
 - Some morphological transformations
 
+## Results
+Results can be found in the folder '/im_process/'
 ## Requirements
 Requirements can be found in the _requirements.txt_
