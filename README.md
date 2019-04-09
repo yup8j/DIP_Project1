@@ -17,16 +17,22 @@ Use the image processing method to extract the ridges in the fingerprint image a
 
 ## Results
 - Original image
+
     ![image](im/7.bmp)
 - Result
+
     ![image](im_process/result_7.bmp)
 - Original image
+
     ![image](im/17.bmp)
 - Result
+
     ![image](im_process/result_17.bmp)
 - Original image
+
     ![image](im/27.bmp)
 - Result
+
     ![image](im_process/result_27.bmp)
 ## Requirements
 Requirements can be found in the _requirements.txt_
