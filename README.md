@@ -12,7 +12,7 @@ Use the image processing method to extract the ridges in the fingerprint image a
 ## Solution
 - Use median blur for salt and pepper noise
 - Use Gaussian blur for Gaussian noise
-- Remove the pore by finding and removing contours with threshold of size 5*5
+- Remove the pore by finding and removing outlier with threshold of size 5*5
 - Some morphological transformations
 
 ## Requirements
