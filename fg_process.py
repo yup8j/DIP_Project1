@@ -22,7 +22,9 @@ def preprocess(num):
     im_gauss = cv2.GaussianBlur(im_median, (3, 3), 0)
     # 二值化：OTSU方法
     ret, im_thresh = cv2.threshold(im_gauss, 0, 255, cv2.THRESH_OTSU)
+    # 移除汗孔
     im_rp1 = remove_pore(im=im_thresh, pore_size_max=36)
+    # 形态学变换
     closing = cv2.morphologyEx(im_rp1, cv2.MORPH_CLOSE, kernel=np.ones((3, 3), np.uint8))
     im_final = closing
     return im_final, num
