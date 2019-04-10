@@ -2,7 +2,14 @@ import cv2
 import numpy as np
 
 
+# 去除汗孔
 def remove_pore(im, pore_size_max):
+    '''
+
+    :param im: 需要去除汗孔的图像
+    :param pore_size_max: 汗孔面积的最大值（经验值）
+    :return: 处理后图像
+    '''
     image, contours, hierarchy = cv2.findContours(im, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
     for i in range(len(contours)):
         area = cv2.contourArea(contours[i])
@@ -20,13 +27,17 @@ def preprocess(num):
     im_median = cv2.medianBlur(im_gray, 5)
     # 高斯滤波：去除高斯噪声
     im_gauss = cv2.GaussianBlur(im_median, (3, 3), 0)
+
     # 二值化：OTSU方法
     ret, im_thresh = cv2.threshold(im_gauss, 0, 255, cv2.THRESH_OTSU)
+    cv2.imshow('median', im_thresh)
+    cv2.waitKey(0)
     # 移除汗孔
     im_rp1 = remove_pore(im=im_thresh, pore_size_max=36)
     # 形态学变换
     closing = cv2.morphologyEx(im_rp1, cv2.MORPH_CLOSE, kernel=np.ones((3, 3), np.uint8))
     im_final = closing
+    cv2.destroyAllWindows()
     return im_final, num
 
 
@@ -35,7 +46,7 @@ def img_write(image, num):
     return "Picture {} .".format(num)
 
 
-img_list = [7, 17, 27]
+img_list = [7]
 for img in img_list:
     final, num = preprocess(img)
     img_write(final, num=num)
