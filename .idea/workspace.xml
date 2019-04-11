@@ -6,7 +6,6 @@
       <change beforePath="$PROJECT_DIR$/fg_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/fg_process.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/im_process/result_17.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/im_process/result_17.bmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/im_process/result_27.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/im_process/result_27.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im_process/result_7.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/im_process/result_7.bmp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,15 +14,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/DIP_Project1$fg_process.coverage" NAME="fg_process Coverage Results" MODIFIED="1554950051411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DIP_Project1$fg_process.coverage" NAME="fg_process Coverage Results" MODIFIED="1554950651000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fg_process.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+            <state relative-caret-position="399">
+              <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -90,7 +89,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="227" />
+    <option name="x" value="37" />
     <option name="y" value="23" />
     <option name="width" value="1014" />
     <option name="height" value="826" />
@@ -167,15 +166,15 @@
       <workItem from="1554856404406" duration="1000" />
       <workItem from="1554872743221" duration="1390000" />
       <workItem from="1554884842538" duration="1535000" />
-      <workItem from="1554903092428" duration="2127000" />
+      <workItem from="1554903092428" duration="2730000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10250000" />
+    <option name="totallyTimeSpent" value="10853000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="227" y="23" width="1014" height="826" extended-state="0" />
+    <frame x="37" y="23" width="1014" height="826" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.27263373" />
@@ -248,8 +247,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fg_process.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+        <state relative-caret-position="399">
+          <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

@@ -35,19 +35,14 @@ def preprocess(num):
     im_gauss = cv2.GaussianBlur(im_median, (3, 3), 0)
     # 二值化：OTSU方法
     ret, im_thresh = cv2.threshold(im_gauss, 0, 255, cv2.THRESH_OTSU)
-
     # 移除汗孔
     im_rp1 = remove_pore(im=im_thresh, pore_size_max=36)
-    cv2.imshow('rp', im_rp1)
     # 形态学变换
     closing = cv2.morphologyEx(im_rp1, cv2.MORPH_CLOSE, kernel=np.ones((3, 3), np.uint8), iterations=1)
     kernel = np.ones((3, 3), np.uint8)
     dilation = cv2.dilate(im_rp1, kernel, iterations=2)
     ero = cv2.erode(dilation, kernel, iterations=2)
     im_final = closing
-    cv2.imshow('closing', closing)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
     return im_final, num
 
 
