@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="206bf01d-70b9-4c8e-9d29-86e9f8e71780" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/im_process/result_14.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/im_process/result_24.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/im_process/result_4.bmp" beforeDir="false" />
-    </list>
+    <list default="true" id="206bf01d-70b9-4c8e-9d29-86e9f8e71780" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fg_process.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="48" column="26" lean-forward="true" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+            <state relative-caret-position="414">
+              <caret line="39" column="11" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -77,7 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="307" />
     <option name="y" value="23" />
     <option name="width" value="1014" />
@@ -156,14 +152,15 @@
       <workItem from="1554872743221" duration="1390000" />
       <workItem from="1554884842538" duration="1535000" />
       <workItem from="1554903092428" duration="3950000" />
+      <workItem from="1554963734059" duration="133000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12073000" />
+    <option name="totallyTimeSpent" value="12206000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="36" y="24" width="1014" height="826" extended-state="0" />
+    <frame x="307" y="23" width="1014" height="826" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.27263373" />
@@ -231,13 +228,13 @@
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/im_process/result_4.bmp">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/im_process/result_4.bmp" />
+    <entry file="file://$PROJECT_DIR$/im_process/result_14.bmp" />
+    <entry file="file://$PROJECT_DIR$/im_process/result_24.bmp" />
     <entry file="file://$PROJECT_DIR$/fg_process.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="48" column="26" lean-forward="true" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+        <state relative-caret-position="414">
+          <caret line="39" column="11" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -255,12 +252,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/im/4.bmp">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/im_process/result_14.bmp">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/im_process/result_24.bmp">
       <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
