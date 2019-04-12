@@ -4,11 +4,11 @@ import numpy as np
 
 # 去除汗孔
 def remove_pore(im, pore_size_max):
-    '''
+    """"
     :param im: 需要去除汗孔的图像
     :param pore_size_max: 汗孔面积的最大值（经验值）
     :return: 处理后图像
-    '''
+    """
     # cv2.RETR_EXTERNAL：只检测外轮廓
     # cv2.CHAIN_APPROX_NON：存储所有的轮廓点
     image, contours, hierarchy = cv2.findContours(im, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
@@ -20,11 +20,11 @@ def remove_pore(im, pore_size_max):
 
 
 def preprocess(num):
-    '''
+    """"
     对图像进行处理，彩色图变为二值图，移除汗孔，细节处理
     :param num: 要处理的图像编号
     :return: 处理后的图像，图像编号
-    '''
+    """
     # 读入
     im = cv2.imread('./im/' + str(num) + '.bmp')
     # 变为灰度图
@@ -39,20 +39,17 @@ def preprocess(num):
     im_rp1 = remove_pore(im=im_thresh, pore_size_max=36)
     # 形态学变换
     closing = cv2.morphologyEx(im_rp1, cv2.MORPH_CLOSE, kernel=np.ones((3, 3), np.uint8), iterations=1)
-    kernel = np.ones((3, 3), np.uint8)
-    dilation = cv2.dilate(im_rp1, kernel, iterations=2)
-    ero = cv2.erode(dilation, kernel, iterations=2)
     im_final = closing
     return im_final, num
 
 
 def img_write(image, num):
-    '''
+    """
     将处理后的图像写入
-    :param image:处理后图像
-    :param num:图像编号
-    :return:成功信息
-    '''
+    . param image:处理后图像
+    . param num:图像编号
+    . return:成功信息
+    """
     cv2.imwrite('./im_process/result_' + str(num) + '.bmp', image)
     return "Picture {} .".format(num)
 
