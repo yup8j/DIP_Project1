@@ -36,3 +36,6 @@ Use the image processing method to extract the ridges in the fingerprint image a
     ![image](im_process/result_27.bmp)
 ## Requirements
 Requirements can be found in the _requirements.txt_
+- opencv_python==3.4.3.18
+- numpy==1.15.4
+
